@@ -57,6 +57,8 @@
 .info-derecha {
   position: relative;
   padding: 1vh;
+  display: flex;
+  justify-content: center;
 }
 
 .info-derecha p {
@@ -91,7 +93,7 @@
 
 /*CELULARES*/
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-  #nosotros {
+  #servicios {
       flex-direction: column;
   }
 
@@ -106,10 +108,11 @@
 
   .info-derecha p {
     font-size: 0.6rem;
+    
   }
 
   .icon-servicio{
-    width: 2vh;
+    top: 50%;
   }
 
   .izquierda, .derecha {
@@ -119,7 +122,7 @@
 
 /*TABLETS*/
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  #nosotros {
+  #servicios {
     flex-direction: column;
   }
 
@@ -129,7 +132,12 @@
 
   .izquierda p{
     margin-top: 1vh;
-    font-size: 0.7rem;
+     font-size: 0.7rem;
+  }
+
+  .derecha{
+    padding: 0;
+    margin:0;
   }
 
   .info-derecha p {
@@ -137,7 +145,7 @@
   }
 
   .icon-servicio{
-    width: 3vh;
+    top: 50%;
   }
 
   .izquierda, .derecha {

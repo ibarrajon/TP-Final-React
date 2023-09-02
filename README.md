@@ -1,8 +1,14 @@
-# React + Vite
+Proyecto final para curso de FullStack - creado por Jon Ibarra - 2023
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Necesitas tener instalado React:
+-Desde la terminal de Visual Studio:
+	-npm install
 
-Currently, two official plugins are available:
+-Paquete de iconos:
+    -npm i react-icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Comando para correrlo desde la terminal::
+	-cd TP-Final-React
+	-cd app
+	-npm run dev
+	-ctrl+clic en el link para abrirlo en el navegador

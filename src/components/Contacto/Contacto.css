@@ -1,0 +1,121 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 1; 
+    visibility: visible;
+}
+
+.btn-contacto {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.contacto-input,.contacto-mensaje {
+    padding: 1vh;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    text-align: left;
+    background-color: #263242;
+    width: 100vh;
+    max-width: 120vh;
+    padding: 5vh;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.form-container label {
+    background-color: #263242;
+}
+
+.enviar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #263242;
+}
+
+.enviar-form {
+    background-color: #2b3c55;
+    color: white;
+    margin-top: 2vh;
+    top: 60%;
+    left: 10%;
+    font-size: 1rem;
+    border-radius: 20vh;/*redondear el boton*/
+    padding: 2vh 9vh;
+    border: none;/*quitar borde del boton*/
+    cursor: pointer;
+}
+
+.enviar-form:hover {
+    background-color: black;
+    color: gray;
+}
+
+/*CELULARES*/
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .enviar-form {
+        padding: 1vh 2vh;
+    }
+
+    .enviar-form,.contacto-input, .contacto-mensaje,.form-container,.contacto-input,.contacto-mensaje {
+        font-size: 0.5rem;
+    }
+
+    .form-container {
+        width:40vh;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .enviar-form {
+        padding: 1vh 2vh;
+    }
+
+    .enviar-form,.contacto-input, .contacto-mensaje,.form-container,.contacto-input,.contacto-mensaje {
+        font-size: 0.7rem;
+    }
+
+    .form-container {
+       width: 50vh;
+    }
+}
+
+/*TABLETS Y MONITORES CHICOS*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .enviar-form {
+        padding: 1vh 5vh;
+    }
+
+    .enviar-form,.contacto-input, .contacto-mensaje,.form-container,.contacto-input,.contacto-mensaje {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        width: 60vh;
+     }
+}

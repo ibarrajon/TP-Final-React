@@ -1,0 +1,222 @@
+/*iconos linkedin y hithub*/
+.inicio-datos {
+  height: 5vh;
+  background-color:#263242;
+  color: white;
+  display: flex; /*ordenar el contenido horizontalmente*/
+  justify-content: space-between; /*ubicar tel y mail a la izquierda e iconos linkedin y github a la derecha*/
+  align-items: center;
+  padding-left: 20vh;
+  padding-right: 12vh;
+  font-size: 1.3rem;
+}
+
+.inicio-datos a {
+  margin: 1vh; /*espacio entre el texto y los iconos*/
+}
+
+.inicio-datos a:hover {
+  color:gray;
+}
+/*telefono y mail*/
+.inicio-info {
+  font-size: 1rem;
+}
+
+.inicio-info a {
+  text-decoration: none; /*quitar el subrayado y el color del link*/
+  color: white;
+}
+
+.navbar {
+  display: flex; /*ordenar el contenido horizontalmente*/
+  justify-content: space-between; /*ubicar logo a la izquierda y menu a la derecha*/
+  padding-left: 10%;
+  padding-right: 15%;
+  font-size: 1.3rem;
+}
+
+.logo {
+  margin-top: 2vh;
+}
+
+.logo img {
+  width: 35vh;
+}
+
+.navbar-container {
+  margin-top: 5vh;
+}
+
+.navbar-links {
+  display: flex; /*ordenar el contenido horizontalmente*/
+}
+
+.navbar-links li {
+  list-style: none;  /*quitar el punto de la lista*/
+  margin-right: 2vh; /*espacio entre los elementos del navbar*/
+}
+
+.navbar-links li a {
+  text-decoration: none; /*quitar el subrayado y el color del link*/
+  color: grey;
+  font-weight: bold;
+}
+
+.navbar-links li a:hover,.btn-contacto:hover {
+  color:darkgray;
+}
+
+.btn-contacto{
+  cursor: pointer;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.servicios{
+  display: flex;  /*acomodar el icono al lado de servicio*/
+  align-items:center;
+}
+
+.icon-servicio{
+  font-size: 1.5vh;
+}
+
+.dropdown-contenido {
+  display: none; /*ocultar el dropdown*/
+  position: absolute; /*para que se muestre sobre el contenido*/
+  z-index: 1; /*para que el dropdown quede sobre el banner, ya que este tambien es absoluto*/
+}
+
+.dropdown-contenido a {
+  background-color: #f1f1f1;
+  padding: 1vh;
+  display: block; /*ordenarlos de forma vertical*/
+  text-align: left;
+}
+
+.dropdown-contenido a:hover {
+  background-color: #1d2837;
+}
+
+.dropdown:hover .dropdown-contenido {
+  display: block; /*mostrar el dropdown al pasar el mouse por encima*/
+}
+
+/*CELULARES*/
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  /*iconos linkedin y hithub*/
+  .inicio-datos {
+    height: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 0.6rem;
+  }
+
+  .inicio-datos a {
+    margin: 0.5vh;
+  }
+
+  /*telefono y mail*/
+  .inicio-info {
+    font-size: 0.5rem;
+  }
+
+  .logo {
+    margin-top: 1vh;
+  }
+
+  .logo img {
+    width: 10vh;
+  }
+
+  .navbar {
+    margin-left: 1vh;
+    font-size: 0.7rem;
+  }
+
+  .navbar-container {
+    margin-top: 1vh;
+  }
+
+  /*cambio de sentido del menu (uno debajo del otro)*/
+  .navbar-links {
+    display: block;
+  }
+
+  .dropdown-contenido a {
+    padding: 0.2vh;
+  }
+
+  .enviar-form {
+    padding: 1vh 2vh;
+  }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 1120px) {
+  /*iconos linkedin y hithub*/
+  .inicio-datos {
+    height: 4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 0.8rem;
+  }
+
+  .inicio-datos a {
+    margin: 0.5vh;
+  }
+
+  /*telefono y mail*/
+  .inicio-info {
+    font-size: 0.7rem;
+  }
+
+  .logo {
+    margin-top: 1vh;
+  }
+
+  .logo img {
+    width: 15vh;
+  }
+
+  .navbar {
+    margin-left: 1vh;
+    font-size: 1rem;
+  }
+
+  .navbar-container {
+    margin-top: 1vh;
+  }
+
+  /*cambio de sentido del menu (uno debajo del otro)*/
+  .navbar-links {
+    display: block;
+  }
+
+  /*acomodar el icono al lado de servicio*/
+  .servicios {
+    display: flex;
+  }
+
+  .dropdown-contenido a {
+    padding: 0.2vh;
+  }
+
+  .enviar-form {
+    padding: 1vh 2vh;
+  }
+}
+
+/*TABLETS Y MONITORES CHICOS*/
+@media only screen and (min-width: 1120px) and (max-width: 1400px) {
+  .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .enviar-form {
+    padding: 1vh 5vh;
+  }
+}

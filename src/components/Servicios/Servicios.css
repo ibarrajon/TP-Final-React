@@ -1,0 +1,169 @@
+#nosotros {
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/edificio.png");
+  background-size: cover;
+}
+
+.fondo-servicios{
+  width: 100%;
+  position: relative;
+}
+
+.izquierda {
+  flex: 1;
+  padding: 5%;
+}
+
+.izquierda h2{
+  font-size: 2rem;
+}
+
+.izquierda p{
+  margin-top: 4vh;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.derecha {
+  flex: 1;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.5); /*opacar imagen de fondo (edificio)*/
+}
+
+.derecha img{
+  filter: brightness(0.5); /*oscurecer las 4 imagenes*/
+  transition: transform 0.8s; /*duracion para el hover*/
+  width: 100%;
+}
+
+.sub-derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /*ordenar los cuadros por culumnas para mantener el formato responsive*/
+}
+
+.row-servicios {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.row-servicios img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-derecha {
+  position: relative;
+  padding: 1vh;
+}
+
+.info-derecha p {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 1rem;
+}
+
+.icon-servicio{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  width: 4vh;
+  height: 4vh;
+}
+
+.info-derecha a{
+  color:white;
+  text-decoration: underline; /*solo dejar el subrayado al link*/
+}
+
+.info-derecha a:hover{
+  color:gray;
+}
+
+.info-derecha img:hover{
+  transform: scale(1.1); /*aumentar de tamaño*/
+  filter: brightness(1); /*aclarecer la imagen*/ 
+}
+
+/*CELULARES*/
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  #nosotros {
+      flex-direction: column;
+  }
+
+  .izquierda h2{
+    font-size: 0.7rem;
+  }
+  
+  .izquierda p{
+    margin-top: 1vh;
+    font-size: 0.5rem;
+  }
+
+  .info-derecha p {
+    font-size: 0.6rem;
+  }
+
+  .icon-servicio{
+    width: 2vh;
+  }
+
+  .izquierda, .derecha {
+    padding: 2%;
+  }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #nosotros {
+    flex-direction: column;
+  }
+
+  .izquierda h2{
+    font-size: 1rem;
+  }
+
+  .izquierda p{
+    margin-top: 1vh;
+    font-size: 0.7rem;
+  }
+
+  .info-derecha p {
+    font-size: 0.8rem;
+  }
+
+  .icon-servicio{
+    width: 3vh;
+  }
+
+  .izquierda, .derecha {
+    padding: 2%;
+  }
+
+  .row-servicios img {
+    max-width: 90%;
+  }
+}
+
+/*TABLETS Y MONITORES CHICOS*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .info-derecha p {
+    font-size: 0.7rem;
+  }
+
+  .icon-servicio{
+    width: 2vh;
+  }
+
+  .izquierda, .derecha {
+    padding: 0;
+  }
+
+  .izquierda p{
+    line-height: 120%;
+  }
+}

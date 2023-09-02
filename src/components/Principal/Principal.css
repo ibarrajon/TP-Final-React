@@ -1,0 +1,153 @@
+.banner {
+    display:flex;
+    position: relative;
+    width: 100%;
+    
+}
+
+.banner img {
+    width: 100%;
+}
+
+.info-banner{
+    width: 50%;
+    position: absolute;  /*info sobre la imagen*/
+    top: 20%;
+    transform: translateY(-10%);
+    left:10%;
+}
+
+.info-banner h1{
+    font-weight: normal; /*quitar formato de "negrita"*/
+    font-size: 3.5rem;
+    margin-bottom: 2vh;
+}
+
+.info-banner h2{
+    font-size: 3rem;
+    padding: 1vh 0vh; 
+    background: rgba(17, 174, 253, .2);
+    transform: translateY(-10%);
+}
+
+.asesoria {
+    height: 18vh;
+    background-color: #00acdf;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    justify-content: space-between; /*alinear texto a la izquierda y boton a la derecha*/
+    padding-left: 12vh;
+    padding-right: 12vh;  
+}
+
+.asesoria h2{
+    color: white; 
+    font-size: 2rem;
+}
+
+.btn-contactanos, .btn-asesoria{
+    font-size: 1rem;
+    border-radius: 20vh; /*redondear el boton*/
+    padding: 3vh 8vh;
+    border: none; /*quitar borde del boton*/
+    cursor: pointer;
+}
+
+.btn-asesoria{
+    position: absolute; 
+    background-color: #1d2837; 
+    color:white;
+    top: 60%;
+    left:10%;
+  
+}
+
+.btn-asesoria:hover {
+    background-color: black;
+    color:gray;
+}
+
+.btn-contactanos{
+    background-color: white; 
+}
+
+.btn-contactanos:hover {
+    background-color: darkcyan;
+    color:white;
+}
+
+/*CELULARES*/
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .info-banner{
+        left:5%;
+    }
+    
+    .info-banner h1{
+        font-size: 1rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    .info-banner h2{
+        font-size: 0.8rem;
+    }
+
+    .banner button, .asesoria button{
+        font-size: 0.5rem;
+        padding: 1vh 2vh;
+    } 
+
+    .asesoria h2{
+        font-size: 0.7rem;
+    }
+
+    .asesoria {
+        height: 5vh;
+        padding-left: 1vh;
+        padding-right: 1vh;  
+    }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    .info-banner h1{
+        font-size: 1.2rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    .info-banner h2{
+        font-size: 1rem;
+    }
+
+    .banner button, .asesoria button{
+        font-size: 0.7rem;
+        padding: 1vh 2vh;
+    }
+
+    .asesoria h2{
+        font-size: 1rem;
+    }
+
+    .asesoria {
+        height: 8vh;
+        padding-left: 5vh;
+        padding-right: 2vh;  
+    }
+}
+
+/*TABLETS Y MONITORES CHICOS*/
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .info-banner h1{
+        font-size: 2.5rem;
+        margin-bottom: 0.5vh;
+    }
+    
+    .info-banner h2{
+        font-size: 1.8rem;
+    }
+
+    .banner button, .asesoria button{
+        font-size: 1rem;
+        padding: 2vh 5vh;
+    }
+}

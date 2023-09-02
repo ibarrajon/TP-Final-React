@@ -1,0 +1,139 @@
+#nosotros {
+    position: relative; /*enviar imagen al fondo*/
+    margin-top: 1vh;
+}
+
+.fondo-nosotros{
+    width: 100%;
+}
+
+.infoquienes {
+    position: absolute; /*posicionarlo sobre la imagen de fondo*/
+    top: 15%;
+    left: 40%;
+    width: 50%;
+}
+
+.infoquienes h2{
+    font-size: 2rem;
+}
+
+.infoquienes p {
+    margin-top: 2vh;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cuadrados{
+    display: flex; /*ordenarlos uno al lado del otro*/
+    margin: 5vh; /*espacio entre el parrafo y los div "cuadrados"*/
+}
+
+.cuadrado1, .cuadrado2{
+    width: 40%;
+    height: auto;
+    padding: 5%;
+    background-color: #fff;
+    display: flex; /*ordenar icono arriba, texto abajo*/
+    justify-content: center; /*alinear imagen finanzas y texto al centro horizontal*/
+    align-items: center; /*alinear imagen finanzas y texto al centro vertical*/
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    text-align: center; /*alinear icono finanzas al centro*/
+    margin-left: 5%; 
+}
+
+.contenido img {
+    width: 8vh;
+    margin-bottom: 15%;
+}
+
+/*efecto que gira la imagen de finanzas*/
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.rotar-imagen:hover {
+    animation: girar 1s; 
+}
+
+/*CELULARES*/
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .infoquienes h2{
+        font-size: 0.7rem;
+    }
+
+    .infoquienes p {
+        font-size: 0.5rem;
+        margin-bottom: 0.5vh;
+        margin-top: 0.5vh;    
+    }
+
+    .cuadrado1, .cuadrado2{
+        font-size: 0.4rem;
+        padding: 0.5%;
+    }
+
+    .contenido img {
+        margin-top: 1vh;
+        width: 2vh;
+    }
+
+    .cuadrados{
+        margin: 1vh; /*espacio entre el parrafo y los div "cuadrados"*/
+    }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .infoquienes h2{
+        font-size: 1.5rem;
+    }
+
+    .infoquienes p {
+        font-size: 0.7rem;
+        margin-bottom: 2vh;    
+        margin-top: 1vh;
+    }
+
+    .cuadrado1, .cuadrado2{
+        font-size: 0.6rem;
+        padding: 0.5%;
+    }
+
+    .contenido img {
+        margin-top: 1vh;
+        width: 3vh;
+    }
+
+    .cuadrados{
+        margin: 3vh; /*espacio entre el parrafo y los div "cuadrados"*/
+    }
+}
+
+/*TABLETS Y MONITORES CHICOS*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .infoquienes p {
+        font-size: 0.8rem;
+        line-height: 120%;
+    }
+
+    .cuadrados{
+        /* padding: 0.5vh; */
+        margin: 3vh;
+    }
+
+    .contenido img {
+        width: 4vh;
+    }
+
+    .cuadrado1, .cuadrado2{
+        font-size: 0.7rem;
+        padding: 5%;
+    }
+}

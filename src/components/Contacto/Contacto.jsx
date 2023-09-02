@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import './Contacto.css';
 
 const Contacto = ({ nombreBoton }) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [popupAbierto, setPopupAbierto] = useState(false);
 
     const togglePopup = () => {
-        setIsOpen(!isOpen);
+        setPopupAbierto(!popupAbierto);
     };
 
     return (
         <>
-            {/* <a onClick={togglePopup}>{nombreBoton}</a> */}
-            {/* <a onClick={togglePopup}>{nombreBoton}</a> */}
             <button className="btn-contacto" onClick={togglePopup}>{nombreBoton}</button>
-            {isOpen && (
+            {popupAbierto && (
                 <div className="popup">
                     <form className='container-contacto'>
                         <div className="form-container">

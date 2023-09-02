@@ -2,7 +2,6 @@
     display:flex;
     position: relative;
     width: 100%;
-    
 }
 
 .banner img {
@@ -49,7 +48,7 @@
 .btn-contactanos, .btn-asesoria{
     font-size: 1rem;
     border-radius: 20vh; /*redondear el boton*/
-    padding: 3vh 8vh;
+    padding: 2vh 5vh;
     border: none; /*quitar borde del boton*/
     cursor: pointer;
 }
@@ -58,9 +57,8 @@
     position: absolute; 
     background-color: #1d2837; 
     color:white;
-    top: 60%;
+    top: 55%;
     left:10%;
-  
 }
 
 .btn-asesoria:hover {
@@ -92,7 +90,7 @@
         font-size: 0.8rem;
     }
 
-    .banner button, .asesoria button{
+    .btn-contactanos, .btn-asesoria{
         font-size: 0.5rem;
         padding: 1vh 2vh;
     } 
@@ -119,7 +117,7 @@
         font-size: 1rem;
     }
 
-    .banner button, .asesoria button{
+    .btn-contactanos, .btn-asesoria{
         font-size: 0.7rem;
         padding: 1vh 2vh;
     }
@@ -146,8 +144,14 @@
         font-size: 1.8rem;
     }
 
-    .banner button, .asesoria button{
+    .btn-contactanos, .btn-asesoria{
         font-size: 1rem;
         padding: 2vh 5vh;
+    }
+
+    .asesoria {
+        height: 10vh;
+        padding-left: 5vh;
+        padding-right: 2vh;  
     }
 }

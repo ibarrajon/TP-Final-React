@@ -13,7 +13,8 @@ const Principal = () => {
                     <h2>TE BRINDAMOS ASESORÍA FISCAL PERSONALIZADA</h2> 
                 </div>
                 
-                <button className='btn-asesoria'><Contacto nombreBoton="SOLICITA UNA ASESORIA"/></button>
+                {/* <button className='btn-asesoria'><Contacto nombreBoton="SOLICITA UNA ASESORIA"/></button> */}
+                <span className='btn-asesoria'><Contacto nombreBoton="SOLICITA UNA ASESORIA"/></span>
             </div>
             
             <div className='asesoria'>

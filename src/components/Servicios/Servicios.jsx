@@ -11,7 +11,7 @@ import { GiAlarmClock } from "react-icons/gi";
 
 const Servicios = () => {
     return ( 
-        <section id="nosotros">    
+        <section id="servicios">    
             <div className="izquierda">
                 <h2>Nuestros Servicios</h2>
                 <p>Ofrecemos Servicios de Contabilidad General. Asesoría Fiscal para reducción de pago de impuestos, Auditorías Financieras, Auditorías Fiscales y la Gestión de Nómina, retenciones y pagos de utilidades.</p>

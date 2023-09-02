@@ -86,8 +86,13 @@
     }
 
     .form-container {
-        width:40vh;
+        width:20rem;
+        /* width:40vh; */
     }
+
+    .btn-contacto{
+        font-size: 0.7rem;
+     }
 }
 
 /*TABLETS*/
@@ -101,8 +106,13 @@
     }
 
     .form-container {
-       width: 50vh;
+       /* width: 50vh; */
+       width: 30rem;
     }
+
+    .btn-contacto{
+        font-size: 1rem;
+     }
 }
 
 /*TABLETS Y MONITORES CHICOS*/
@@ -116,6 +126,11 @@
     }
 
     .form-container {
-        width: 60vh;
+        /* width: 60vh; */
+        width: 40rem;
+     }
+
+     .btn-contacto{
+        font-size: 1rem;
      }
 }

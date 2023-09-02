@@ -11,11 +11,10 @@ const Header = () => {
         <header id="inicio">
             <div className='inicio-datos'>
                 <div className='inicio-info'>
-                    <BsTelephoneFill style={{ color: 'white'}} />    
+                    <BsTelephoneFill />    
                     <a href="whatsapp://send?phone=+542324541770">(2324) 541770</a>
-
-                    <GoMail />       
-                    <a href="mailto:jon.programador@hotmail.es">jon.programador@hotmail.es</a>
+                    <GoMail />          
+                    <a href="mailto:jon.programador@hotmail.es">jon.programador@hotmail.es</a>   
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/jon-ibarra/"><BiLogoLinkedin style={{ color: 'white'}} /></a>
@@ -32,17 +31,17 @@ const Header = () => {
                         <div className="navbar-container">
                             <ul className="navbar-links">
                                 <li><a href="/#inicio">INICIO</a></li>
-                                <li><a href="/#nosotros">NOSOTROS</a></li>
+                                <li><a href="#nosotros">NOSOTROS</a></li>
                                 <li className="dropdown">
-                                    <a className="servicios">SERVICIOS <BsChevronDown className='icon-servicio' /></a>
+                                    <a className="servicios">SERVICIOS <BsChevronDown /></a>
                                     <ul className="dropdown-contenido">
-                                        <li><a href="/#servicios">ESTRATEGIAS FISCALES</a></li>
-                                        <li><a href="/#servicios">GESTION DE NOMINA</a></li>
-                                        <li><a href="/#servicios">CONTABILIDAD DE COSTOS</a></li>
-                                        <li><a href="/#servicios">DEVOLUCION DE IMPUESTOS</a></li>    
+                                        <li><a href="#servicios">ESTRATEGIAS FISCALES</a></li>
+                                        <li><a href="#servicios">GESTION DE NOMINA</a></li>
+                                        <li><a href="#servicios">CONTABILIDAD DE COSTOS</a></li>
+                                        <li><a href="#servicios">DEVOLUCION DE IMPUESTOS</a></li>    
                                     </ul>
                                 </li>
-                                <li><a href="/#blog">BLOG</a></li>
+                                <li><a href="#blog">BLOG</a></li>
                                 <li className='li-contacto'><Contacto nombreBoton="CONTACTO"/></li>
                             </ul>
                         </div>

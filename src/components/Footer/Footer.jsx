@@ -7,7 +7,7 @@ const Footer = () => {
     return(
         <footer>
             <div className='inicio'>
-                <a href="/#inicio"><button className='arriba'><AiOutlineUp/></button></a>
+                <a href="#inicio"><button className='arriba'><AiOutlineUp/></button></a>
                 <p>JI Business 2023. Desarrollado por Jon Ibarra.</p>
             </div>
             <div className="terminos"> 

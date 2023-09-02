@@ -79,10 +79,6 @@
   align-items:center;
 }
 
-.icon-servicio{
-  font-size: 1.5vh;
-}
-
 .dropdown-contenido {
   display: none; /*ocultar el dropdown*/
   position: absolute; /*para que se muestre sobre el contenido*/
